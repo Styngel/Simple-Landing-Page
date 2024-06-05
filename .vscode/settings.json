@@ -13,7 +13,6 @@
     "workbench.activityBar.location": "hidden",
     "editor.minimap.enabled": false,
     "editor.scrollbar.horizontal": "hidden",
-    "editor.scrollbar.vertical": "hidden",
     "workbench.statusBar.visible": false,
     "workbench.layoutControl.enabled": false,
     "apc.electron": {
