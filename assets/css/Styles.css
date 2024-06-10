@@ -46,7 +46,15 @@ font-size: 2rem;
     background-size: cover;
     background-position: center center;
     color: #fff;
-    background-repeat:no-repeat
+    background-repeat:no-repeat;
+}
+.fundo3-svg{
+    background-image: url(../img/third-svg.svg);
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    background-repeat: repeat;
+    background-size: 38rem;
 }
 
 /*------------------------------------------------------------------------------*/
@@ -178,14 +186,14 @@ font-size: 2rem;
 /*-----------------------------------Jobs---------------------------------------*/
 
 .jobs{
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .jobs-content {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    height: 100vh;
+    height: 100%;
     max-width: 100rem;
 }
 
@@ -222,5 +230,87 @@ font-size: 2rem;
 /*----------------------------------GALLERY-------------------------------------*/
  
 .gallery {
-    height: 100vh;
+    min-height: 100vh;
 }
+
+.gallery-content{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 100rem;
+}
+.gallery-content header{
+    align-self: left;
+    margin-bottom: 4rem;
+}
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem; 
+    height: 70vh;
+    width: 100rem;
+}
+.pic {
+    max-width: 33rem;
+    max-height: 32rem;
+    overflow: hidden;
+}
+.pic img{
+    transition: all 400ms ease-in-out;
+}
+.pic img:hover {
+    transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
+}
+
+/*------------------------------------------------------------------------------*/
+/*----------------------------------TABLE---------------------------------------*/
+
+.work{
+    min-height: 100vh;
+}
+.work-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    max-width: 100rem;
+}
+.work-content h1, p {
+    max-width: 80rem;
+    align-self: center;
+    margin-bottom: 3rem;
+}
+
+.table{
+    min-width: 36rem;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    background-color: #fff;
+    color:#18153A;
+    overflow: hidden; 
+    margin-top: 5rem;
+    padding-bottom: 5rem;
+}
+.table td, table th{
+    border: 0.1rem solid #18153A;
+    padding: 0.4rem;
+    white-space: nowrap;
+}
+tfoot td, th{
+    background: #bdbaba;
+    text-align: right;
+}
+.table th {
+    text-align: center;
+}
+.table caption {
+    font-size: 1.3rem;
+    color: #fff;
+    text-align: left;
+    margin-bottom: 0.7rem;
+}
+
+/*------------------------------------------------------------------------------*/
