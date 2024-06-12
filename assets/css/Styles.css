@@ -1,28 +1,34 @@
 :root {
     --cor1: #18153A;
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 html{
     font-size: 62.5%;
     scroll-behavior: smooth ;
 }
+
 body {
     font-family: 'open sans';
     font-size: 2rem;
     color: var(--cor1);
 }
+
 h1{
 font-family: 'montserrat';
 font-size: 4.5rem;
 }
+
 h2{
 font-family: 'montserrat';
 font-size: 2.5rem; 
 }
+
 h3{
 font-family: 'montserrat';
 font-size: 2rem;
@@ -31,10 +37,12 @@ font-size: 2rem;
 /*------------------------------------------------------------------------------*/
 /*---------------------------------Estrutura------------------------------------*/
 
+
 .main-content{
     max-width: 120rem;
     margin: 0 auto;
 }
+
 .fundo-svg {
     background-image: url(../img/main-svg.svg);
     background-size: cover;
@@ -42,6 +50,7 @@ font-size: 2rem;
     background-size: 35rem;
     color: #fff;
 }
+
 .fundo2-svg{
     background-image: url(../img/second-svg.svg);
     background-size: cover;
@@ -49,6 +58,7 @@ font-size: 2rem;
     color: #fff;
     background-repeat:no-repeat;
 }
+
 .fundo3-svg{
     background-image: url(../img/third-svg.svg);
     background-size: cover;
@@ -61,6 +71,7 @@ font-size: 2rem;
 /*------------------------------------------------------------------------------*/
 /*------------------------------------Menu--------------------------------------*/
 
+
 .menu{
     background-color:white;
     height: 8rem;
@@ -69,6 +80,7 @@ font-size: 2rem;
     border-bottom: 0.1rem solid gray;
     z-index: 1;
 }
+
 .menu-content {
     height: 8rem;
     display: flex;
@@ -76,22 +88,27 @@ font-size: 2rem;
     align-items: center;
     color: var(--cor1);
 }
+
 .logo{
     height: 5rem;
     width: 13rem;
 }
+
 .menu-content a {
     position: relative;
 }
+
 .menu-content nav ul {
     display: flex;
 }
+
 .menu-content ul li {
     height: 8rem;
     font-size: 1.5rem;
     display: flex;
     align-items: center center;
 }
+
 .menu-content ul li a {
     list-style: none;
     display: block;
@@ -102,6 +119,7 @@ font-size: 2rem;
     color:inherit;
     font-size: 2.4rem;
 }
+
 .logo1::after{
     content:'';
     position: absolute;
@@ -112,10 +130,12 @@ font-size: 2rem;
     background: #18153A;
     transition: all 300ms ease-in-out;
 }
+
 .logo1:hover::after{
     width: 100%;
     left: 1%;
 }
+
 .menu-content ul li a:hover {
     background-color: rgba(24,21,58,0.8);
     transition:all 0.5s ease-in-out;
@@ -128,34 +148,40 @@ font-size: 2rem;
 /*------------------------------------------------------------------------------*/
 /*----------------------------------INTRO---------------------------------------*/
 
+
 .intro{
-    height: 98vh;
+    height: 100vh;
     width: 100%;
     padding-top: 8.1rem;
     font-size: 1.5rem;
 }
+
 .intro-grid{
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: 3rem;
     align-items: center;
-    height: 75vh;
+    height: 80vh;
     padding-top: 8.1rem;
 }
+
 .intro-text{
     text-align: center;
 }
+
 .intro-text .intro-img{
     display: flex;
     flex-flow: column wrap;
     justify-content: center; 
 }
+
 .intro-text h1{
     font-size: 5rem;
     margin-bottom: 2rem;
     margin-top: -8rem;
     text-transform: uppercase; 
 }
+
 .intro-img{
     display: flex;
     flex-direction: column;
@@ -163,6 +189,7 @@ font-size: 2rem;
     height: 40rem;
     width: 100%;
 }
+
 .intro-img img{
     max-width: 100%;
     height: auto;
@@ -176,6 +203,7 @@ font-size: 2rem;
     height: 100vh;
 
 }
+
 .top3-content {
     display: flex;
     flex-flow: column wrap;
@@ -187,6 +215,7 @@ font-size: 2rem;
 
 /*------------------------------------------------------------------------------*/
 /*-----------------------------------Jobs---------------------------------------*/
+
 
 .jobs{
     min-height: 100vh;
@@ -203,8 +232,9 @@ font-size: 2rem;
 .jobs-content h1 {
     text-transform: uppercase;
 }
+
 .jobs-content header {
-    margin-top: 8rem;
+    margin-top: 12rem;
     margin-bottom: 8rem;
 }
 
@@ -215,13 +245,16 @@ font-size: 2rem;
     height: 45vh;
     max-width: 100rem;
 }
+
 .jobs-grid article {
     text-align: center;
 }
+
 .jobs-grid article h2 {
     text-align: center;
     margin-bottom: 6rem;
 }
+
 .article3 p {
     display: flex;
     flex-flow: column wrap;
@@ -232,6 +265,7 @@ font-size: 2rem;
 /*------------------------------------------------------------------------------*/
 /*----------------------------------GALLERY-------------------------------------*/
  
+
 .gallery {
     min-height: 100vh;
 }
@@ -243,10 +277,12 @@ font-size: 2rem;
     min-height: 100vh;
     max-width: 100rem;
 }
+
 .gallery-content header{
     align-self: left;
     margin-bottom: 4rem;
 }
+
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -254,14 +290,17 @@ font-size: 2rem;
     height: 70vh;
     width: 100rem;
 }
+
 .pic {
     max-width: 33rem;
     max-height: 32rem;
     overflow: hidden;
 }
+
 .pic img{
     transition: all 400ms ease-in-out;
 }
+
 .pic img:hover {
     transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
 }
@@ -269,9 +308,11 @@ font-size: 2rem;
 /*------------------------------------------------------------------------------*/
 /*----------------------------------TABLE---------------------------------------*/
 
+
 .work{
     min-height: 100vh;
 }
+
 .work-content {
     display: flex;
     flex-flow: column wrap;
@@ -280,7 +321,8 @@ font-size: 2rem;
     height: 100vh;
     max-width: 100rem;
 }
-.work-content h1, p {
+
+.work-content h1, .work-content p {
     max-width: 80rem;
     align-self: center;
     margin-bottom: 3rem;
@@ -297,18 +339,22 @@ font-size: 2rem;
     margin-top: 5rem;
     padding-bottom: 5rem;
 }
+
 .table td, table th{
     border: 0.1rem solid #18153A;
     padding: 0.4rem;
     white-space: nowrap;
 }
+
 tfoot td, th{
     background: #bdbaba;
     text-align: right;
 }
+
 .table th {
     text-align: center;
 }
+
 .table caption {
     font-size: 1.3rem;
     color: #fff;
@@ -317,10 +363,13 @@ tfoot td, th{
 }
 
 /*------------------------------------------------------------------------------*/
+/*------------------------------CONTATO-----------------------------------------*/
+
 
 .contact {
     min-height: 100vh;
 }
+
 .contact-grid{
     display: grid;
     grid-template-columns: 1fr 1.5fr;
@@ -329,9 +378,11 @@ tfoot td, th{
     min-height: 95vh;
     padding-top: 11rem;
 }
+
 .contact-text {
     grid-column: span 2;
 }
+
 .form-flex {
     border: none;
     display: flex;
@@ -340,6 +391,7 @@ tfoot td, th{
     padding-top: 1rem;
     overflow: hidden;
 }
+
 .form-flex legend {
     text-align: center;
     padding-bottom: 3rem;
@@ -347,13 +399,16 @@ tfoot td, th{
     text-decoration: underline;
     padding-top: 0.5rem;
 }
+
 .form {
     flex: 1 1 auto;
 }
+
 .form label{
     display: block;
     margin-bottom: 0.5rem;
 }
+
 .form input, textarea {
     border: inherit;
     background-color: #18153abe;
@@ -363,6 +418,7 @@ tfoot td, th{
     font-size: 1.8rem;
     font-family:'montserrat';
 }
+
 .message {
     flex:1 1 100%;
 }
@@ -372,10 +428,41 @@ tfoot td, th{
     padding: 0.7rem 1rem;
     cursor: pointer;
 }
+
 .form ::placeholder {
     color: #bdbaba;
 }
+
 button {
     display: block;
     margin: 0 auto;
 }
+
+/*------------------------------------------------------------------------------*/
+/*-------------------------------FOOTER-----------------------------------------*/
+
+.footer {
+    min-height: 8vh;
+    background-color: #bdbaba;
+    display:flex;
+    color:#18153A
+}
+.footer p{
+    display: block;
+    margin: auto; 
+}
+
+.footer a:link{
+    text-decoration: none;
+    color:#18153A;
+}
+
+.footer a:visited{
+    color:#18153A; 
+}
+
+.footer a:hover {
+text-decoration:underline ;
+}
+
+/*------------------------------------END---------------------------------------*/
