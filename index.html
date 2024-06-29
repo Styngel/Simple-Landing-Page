@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="assets/css/Styles.css">
 </head>
 <body>
+    <input type="checkbox" name="mbutton" class="mbutton" id="mbutton" role="button">
+    <label for="mbutton" class="close-menu" title="Menu"></label>
     <aside class="menu">
         <div class="menu-content main-content">
-         <a href="#home" class="logo1"> <img src="assets/img/Semtitulo-2.png"
+         <a onclick="getElementById('mbutton').checked=false;" href="#home" class="logo1"> <img src="assets/img/Semtitulo-2.png"
             alt="logo base da pagina, um Gui cortado pelo nome Guilherme Nunes" class="logo"> </a>
           <nav>
-           <ul>
+           <ul onclick="getElementById('mbutton').checked=false;">
             <li> <a href="#intro"> Intro</a> </li>
             <li> <a href="#jobs"> Projects</a> </li>
             <li> <a href="#gallery"> Gallery</a> </li>
@@ -23,6 +25,10 @@
           </nav>
         </div>
     </aside>
+    <div class="logoo">
+        <a href="#home" class="logoo1"> <img src="assets/img/Semtitulo-2.png"
+        alt="logo base da pagina, um Gui cortado pelo nome Guilherme Nunes" class="logo"> </a>
+    </div>
     <section id="home" class="intro fundo-svg">
         <div class="intro-grid main-content">
             <div class="intro-text">
@@ -160,25 +166,27 @@
             <div class="contact-text">
                 <fieldset class="form-flex">
                     <legend> Dados para Contato</legend>
+                    <form class="form-flex" action="https://formsubmit.co/guilhermenunes311@gmail.com" method="POST">
                     <div class="form">
                         <label for="first-name"> Primeiro Nome</label>
-                        <Input type="text" placeholder="Jõao" name="first-name" id="first-name">
+                        <Input type="text" placeholder="Jõao" name="first-name" id="first-name" required autocomplete="off">
                     </div>
                     <div class="form">
                         <label for="last-name"> Sobrenome</label>
-                        <Input type="text" placeholder="Silva" name="last-name" id="last-name">
+                        <Input type="text" placeholder="Silva" name="last-name" id="last-name" required autocomplete="off">
                     </div>
                     <div class="form">
                         <label for="email"> E-mail</label>
-                        <Input type="email" placeholder="Joaosilva123@email.com" name="email" id="email">
+                        <Input type="email" placeholder="Joaosilva123@email.com" name="email" id="email" required autocomplete="off">
                     </div>
                     <div class="form message">
                         <label for="message">Mensagem</label>
-                        <textarea name="message" placeholder="..." id="message" cols="30" rows="5"></textarea>
+                        <textarea name="message" placeholder="..." id="message" cols="30" rows="5" required autocomplete="off"></textarea>
                     </div>
                     <div class="form button">
                         <button type="submit"> Enviar Mensagem </button>
                     </div>
+                </form>
                 </fieldset>
             </div>
         </div>

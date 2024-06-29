@@ -144,7 +144,12 @@ font-size: 2rem;
     color: white;
     box-sizing: content-box;
 }
-
+.mbutton{
+    display: none;
+}
+.logoo{
+    display: none;
+}
 /*------------------------------------------------------------------------------*/
 /*----------------------------------INTRO---------------------------------------*/
 
@@ -336,8 +341,12 @@ font-size: 2rem;
     margin-bottom: 3rem;
 }
 
+.work table {
+    overflow: hidden;
+    overflow-x: auto;
+}
+
 .table{
-    min-width: 36rem;
     width: 100%;
     border-collapse: collapse;
     text-align: left;
@@ -413,7 +422,6 @@ tfoot td, th{
 
 .form label{
     display: block;
-    margin-bottom: 0.5rem;
 }
 
 .form input, textarea {
@@ -443,6 +451,8 @@ tfoot td, th{
 button {
     display: block;
     margin: 0 auto;
+    margin-bottom: 3rem;
+    margin-top: -1rem;
 }
 
 /*------------------------------------------------------------------------------*/
@@ -502,7 +512,6 @@ text-decoration:underline ;
     .gallery-grid img {
         width: 100%;
         max-width: 100%;
-        max-height: 100%;
     }
 }
 
@@ -520,7 +529,7 @@ text-decoration:underline ;
         width: 20%;
     }
     .intro {
-        padding-top: 150px;
+        padding-top: 15rem;
     }
 }
 @media (max-width:575px) {
@@ -529,27 +538,32 @@ text-decoration:underline ;
         grid-template-columns: 1fr;
         margin-bottom: 3rem;
     }
-    .contact-grid {
-        margin-top: 2rem;
+    .pic{
+        margin: 0 auto;
     }
+        .menu{
+            display: none;
+        }
+        
         .menu-content{
-            min-height: 130px; 
-            margin-top: 2rem;
-            height: 500px;
+            height: 50rem;
+            margin-top: 0;
         }
         .menu-content a{
-            margin-bottom: 20px;
+            display: block;
+        
         }
         .menu-content nav ul{
             display: inline;
             height: auto ;
+            
         }
         .menu-content nav ul li{
             display:block;
             width: 100%;
         }
         .intro {
-            padding-top: 550px;
+            padding-top: 8.1rem;
         }
         .intro-img{
             max-height: 10rem;
@@ -557,6 +571,35 @@ text-decoration:underline ;
         .intro-grid{
             padding-top: 0;
         }
-}
 
+        .close-menu::after{
+            content: '☰';
+            position: fixed;
+            z-index: 2;
+            right: 1rem;
+            margin-top: 2.5rem;
+            background: var(--cor1);
+            color: #fff;
+            text-align: center;
+            width: 3rem;
+            height: 3rem;
+            padding: 0.3rem;
+            cursor: pointer;
+            border: 0.1rem solid #fff ;
+        }
+        .mbutton:checked~.menu{
+            display: block;
+        }
+        .mbutton:checked~.close-menu::after{
+            content: '×';
+            
+        }
+        .logoo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 10rem;
+        }
+        
+}
 /*------------------------------------END---------------------------------------*/

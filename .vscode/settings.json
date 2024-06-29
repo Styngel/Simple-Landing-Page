@@ -14,7 +14,7 @@
     "editor.minimap.enabled": false,
     "editor.scrollbar.horizontal": "hidden",
     "workbench.statusBar.visible": false,
-    "workbench.layoutControl.enabled": false,
+    "workbench.layoutControl.enabled": true,
     "apc.electron": {
         "titleBarStyle": "hiddenInset",
     },
